@@ -1,2 +1,3 @@
 # This will prevent our vscode settings to go to git
 .vscode/settings.json
+node_modules
