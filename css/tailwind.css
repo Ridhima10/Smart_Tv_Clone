@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Testing css utilities */
 /* @layer utilities{
     .required{
         @apply ml-2 after:content-['*'] after:text-[red] after:font-bold 

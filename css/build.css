@@ -568,10 +568,6 @@ video {
   margin-right: 0.75rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .mr-10{
   margin-right: 2.5rem;
 }
@@ -598,10 +594,6 @@ video {
 
 .-ml-11{
   margin-left: -2.75rem;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
 }
 
 .inline-block{
@@ -636,10 +628,6 @@ video {
   height: 4rem;
 }
 
-.h-\[40\.44rem\]{
-  height: 40.44rem;
-}
-
 .w-24{
   width: 6rem;
 }
@@ -662,22 +650,6 @@ video {
 
 .w-60{
   width: 15rem;
-}
-
-.w-\[50rem\]{
-  width: 50rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-2\/6{
-  width: 33.333333%;
 }
 
 .w-4\/12{
@@ -733,10 +705,6 @@ video {
   border-radius: 9999px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .bg-primary\/25{
   background-color: rgb(203 119 119 / 0.25);
 }
@@ -744,15 +712,6 @@ video {
 .bg-sub-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(158 93 84 / var(--tw-bg-opacity));
-}
-
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(171 166 165 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .bg-white{
@@ -774,14 +733,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-6{
@@ -946,16 +905,13 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+/* Testing css utilities */
+
 /* @layer utilities{
     .required{
         @apply ml-2 after:content-['*'] after:text-[red] after:font-bold 
     }
 } */
-
-.group:hover .group-hover\:text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
 
 .peer\/a:hover ~ .peer-hover\/a\:bg-secondary{
   --tw-bg-opacity: 1;
