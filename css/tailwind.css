@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,14 +10,14 @@
         @apply ml-2 after:content-['*'] after:text-[red] after:font-bold 
     }
 } */
-@layer utilities{
-    .side-icons{
-        @apply text-secondary hover:text-dark  py-4 my-2
-    }
-    .buttons{
-        @apply items-center bg-secondary bg-opacity-10 px-4  w-60 hover:shadow-lg hover:bg-white
-    }
-    .hover-class{
-      @apply  text-secondary group-hover:text-red-600 mr-3
-    }
+@layer utilities {
+  .side-icons {
+    @apply text-secondary hover:text-dark  py-4 my-2;
+  }
+  .buttons {
+    @apply items-center bg-secondary bg-opacity-10 px-4 hover:shadow-lg hover:bg-white;
+  }
+  .hover-class {
+    @apply text-secondary group-hover:text-red-600 mr-3;
+  }
 }

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Tv</title>
+    <link rel="stylesheet" href="./css/build.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Smart Tv</title>
-        <link rel="stylesheet" href="./css/build.css" />
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    </head>
-    <style>
-    </style>
-
-    <body>
-        <!-- Testing tailwind -->
-        <!-- <div class="bg-primary/25">
+  <body>
+    <!-- Testing tailwind -->
+    <!-- <div class="bg-primary/25">
             <h1 class="text-secondary required">Hello World</h1>
         </div>
         <div class="flex">
@@ -24,102 +25,196 @@
             </div>
         </div>
         <h3 class="required">Text</h3> -->
-        <nav class="relative 100-vh z-10">
-            <div class="flex justify-between items-center">
-                <div class="p-4 flex overflow-hidden ml-10">
-                    <div class="mr-7">
-                        <img class="inline-block h-10 w-10 rounded-full outline outline-1 outline-stone-200 outline-offset-4 object-cover"
-                            src="./img/profile.jpg" alt="profile picture" />
-                    </div>
-                    <div>
-                        <p class="font-bold text-lg">10:25</p>
-                        <p class="text-secondary text-xs">Mon, 25 January</p>
-                    </div>
-                </div>
-                <div class="flex items-center py-5 mr-7">
-                    <div class="mr-3">
-                        <svg width="5.4349mm" height="3.9893mm" viewBox="0 0 5.4349 3.9893"
-                            xmlns="http://www.w3.org/2000/svg" class="h-12 w-12">
-                            <g transform="translate(-42.646 -145.06)">
-                                <g transform="matrix(.2061 0 0 .2061 42.646 145.06)" style="fill: #1f2221">
-                                    <path
-                                        d="m8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-12a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm0 13a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm8-5a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm-13 0a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm10.657-5.657a0.5 0.5 0 0 1 0 0.707l-1.414 1.415a0.50028 0.50028 0 1 1-0.707-0.708l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm-9.193 9.193a0.5 0.5 0 0 1 0 0.707l-1.414 1.414a0.5 0.5 0 0 1-0.707-0.707l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm9.193 2.121a0.5 0.5 0 0 1-0.707 0l-1.414-1.414a0.5 0.5 0 0 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.707zm-9.193-9.192a0.5 0.5 0 0 1-0.707 0l-1.414-1.415a0.5 0.5 0 1 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.708z"
-                                        style="fill: #1f2221" />
-                                </g>
-                                <g transform="matrix(.26458 0 0 .26458 43.716 145.48)"
-                                    style="fill: #d7d7d7; stroke: #f6f3f3">
-                                    <path
-                                        d="M 4.406,3.342 A 5.53,5.53 0 0 1 8,2 c 2.69,0 4.923,2 5.166,4.579 C 14.758,6.804 16,8.137 16,9.773 16,11.569 14.502,13 12.687,13 H 3.781 C 1.708,13 0,11.366 0,9.318 0,7.555 1.266,6.095 2.942,5.725 3.085,4.862 3.64,4.002 4.406,3.342 Z"
-                                        style="fill: #d7d7d7; stroke: #f6f3f3" />
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="font-bold text-lg">+18</p>
-                        <p class="text-secondary text-xs">San Francisco, CA</p>
-                    </div>
-                </div>
-                <div class="mr-10">
-                    <i class="ri-mic-fill ri-md bg-white rounded-full p-4"></i>
-                </div>
+    <!-- <main class="h-screen min-h-screen relative">
+      <div class="container z-0">
+        <nav class="relative">
+          <div class="flex justify-between items-center">
+            <div class="p-4 flex overflow-hidden ml-10">
+              <div class="mr-7">
+                <img
+                  class="inline-block h-10 w-10 rounded-full outline outline-1 outline-stone-200 outline-offset-4 object-cover"
+                  src="./img/profile.jpg"
+                  alt="profile picture"
+                />
+              </div>
+              <div>
+                <p class="font-bold text-lg">10:25</p>
+                <p class="text-secondary text-xs">Mon, 25 January</p>
+              </div>
             </div>
+            <div class="flex items-center py-5 mr-7">
+              <div class="mr-3">
+                <svg
+                  width="5.4349mm"
+                  height="3.9893mm"
+                  viewBox="0 0 5.4349 3.9893"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-12 w-12"
+                >
+                  <g transform="translate(-42.646 -145.06)">
+                    <g
+                      transform="matrix(.2061 0 0 .2061 42.646 145.06)"
+                      style="fill: #1f2221"
+                    >
+                      <path
+                        d="m8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-12a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm0 13a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm8-5a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm-13 0a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm10.657-5.657a0.5 0.5 0 0 1 0 0.707l-1.414 1.415a0.50028 0.50028 0 1 1-0.707-0.708l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm-9.193 9.193a0.5 0.5 0 0 1 0 0.707l-1.414 1.414a0.5 0.5 0 0 1-0.707-0.707l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm9.193 2.121a0.5 0.5 0 0 1-0.707 0l-1.414-1.414a0.5 0.5 0 0 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.707zm-9.193-9.192a0.5 0.5 0 0 1-0.707 0l-1.414-1.415a0.5 0.5 0 1 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.708z"
+                        style="fill: #1f2221"
+                      />
+                    </g>
+                    <g
+                      transform="matrix(.26458 0 0 .26458 43.716 145.48)"
+                      style="fill: #d7d7d7; stroke: #f6f3f3"
+                    >
+                      <path
+                        d="M 4.406,3.342 A 5.53,5.53 0 0 1 8,2 c 2.69,0 4.923,2 5.166,4.579 C 14.758,6.804 16,8.137 16,9.773 16,11.569 14.502,13 12.687,13 H 3.781 C 1.708,13 0,11.366 0,9.318 0,7.555 1.266,6.095 2.942,5.725 3.085,4.862 3.64,4.002 4.406,3.342 Z"
+                        style="fill: #d7d7d7; stroke: #f6f3f3"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-lg">+18</p>
+                <p class="text-secondary text-xs">San Francisco, CA</p>
+              </div>
+            </div>
+            <div class="mr-10">
+              <i class="ri-mic-fill ri-md bg-white rounded-full p-4"></i>
+            </div>
+          </div>
         </nav>
-        <section>
-            <div class="grid grid-cols-6">
-                <div class="col-span-1 pt-16 mt-16 ml-16">
-                    <div class="flex flex-col">
-                        <i class="ri-search-line ri-lg py-4 my-2 "></i>
-                        <i class="ri-home-5-fill  ri-lg side-icons"></i>
-                        <i class="ri-movie-2-fill ri-lg side-icons"></i>
-                        <i class="ri-clapperboard-fill ri-lg side-icons"></i>
-                        <i class="ri-add-fill ri-lg py-4 my-2"></i>
-                    </div>
-                </div>
-                <div class="col-span-3 pt-4">
-                    <img class="h-16 mt-7" src="./img/netflix-logo.png" alt="" />
-                    <h1 class="text-[5rem] pt-6 font-bold tracking-wider">The Crown</h1>
-                    <div class="py-8">
-                        <i class="ri-star-fill text-yellow-400 ri-lg"></i>
-                        <i class="ri-star-fill text-yellow-400 ri-lg"></i>
-                        <i class="ri-star-fill text-yellow-400 ri-lg"></i>
-                        <i class="ri-star-fill text-yellow-400 ri-lg"></i>
-                        <i class="ri-star-fill ri-lg text-slate-300"></i>
-                        <span class="px-6">2020</span>
-                        <span class="">4 Season</span>
-                        <span class="text-yellow-500 px-6">Ultra 4K</span>
-                    </div>
-                    <div class="mb-11">
-                        <p class="text-secondary brek-normal w-[28rem]">
-                            This drama follows the political rivalries and romance of Queen
-                            Elizabeth ll's reign and the events that shaped the second half of
-                            the 20th century.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-x-24 gap-y-2 justify-items-start w-2/3">
-                        <button class="flex items-center shadow-lg px-4 py-2 mb-3 w-60">
-                            <i class="ri-play-circle-fill ri-2x text-red-600 mr-3"></i>Play S4
-                            E10
-                        </button>
-                        <button class="flex group mb-3 -ml-11 py-1 buttons">
-                            <i class="ri-play-list-2-fill ri-xl hover-class"></i>Play
-                            S4 All episodes
-                        </button>
-                        <button class="flex py-4 buttons group">
-                            <i class="ri-headphone-fill ri-xl hover-class"></i>Audio &
-                            Subtitles
-                        </button>
-                        <button class="flex py-4 -ml-11 buttons group">
-                            <i class="ri-delete-bin-7-fill ri-xl hover-class"></i>Remove
-                            from list
-                        </button>
-                    </div>
-                </div>
-                <div class="col-span-2">
-                    <img class="absolute top-0 bottom-0 right-0 w-4/12" src="./img/bg-img.jpeg" alt="" />
-                </div>
-            </div>
-        </section>
-    </body>
+      </div>
+      <div class="absolute right-0 h-full -z-10">
+        <img class="h-full" src="./img/bg-img.jpeg" alt="" />
+      </div>
+    </main> -->
 
+    <section class="h-screen z-10">
+      <nav class="relative z-10">
+        <div class="flex justify-between items-center">
+          <div class="p-4 flex overflow-hidden ml-10">
+            <div class="mr-7">
+              <img
+                class="inline-block h-10 w-10 rounded-full outline outline-1 outline-stone-200 outline-offset-4 object-cover"
+                src="./img/profile.jpg"
+                alt="profile picture"
+              />
+            </div>
+            <div>
+              <p class="font-bold text-lg">10:25</p>
+              <p class="text-secondary text-xs">Mon, 25 January</p>
+            </div>
+          </div>
+          <div class="flex items-center py-5 mr-7">
+            <div class="mr-3">
+              <svg
+                width="5.4349mm"
+                height="3.9893mm"
+                viewBox="0 0 5.4349 3.9893"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+              >
+                <g transform="translate(-42.646 -145.06)">
+                  <g
+                    transform="matrix(.2061 0 0 .2061 42.646 145.06)"
+                    style="fill: #1f2221"
+                  >
+                    <path
+                      d="m8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-12a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm0 13a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-1 0v-2a0.5 0.5 0 0 1 0.5-0.5zm8-5a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm-13 0a0.5 0.5 0 0 1-0.5 0.5h-2a0.5 0.5 0 0 1 0-1h2a0.5 0.5 0 0 1 0.5 0.5zm10.657-5.657a0.5 0.5 0 0 1 0 0.707l-1.414 1.415a0.50028 0.50028 0 1 1-0.707-0.708l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm-9.193 9.193a0.5 0.5 0 0 1 0 0.707l-1.414 1.414a0.5 0.5 0 0 1-0.707-0.707l1.414-1.414a0.5 0.5 0 0 1 0.707 0zm9.193 2.121a0.5 0.5 0 0 1-0.707 0l-1.414-1.414a0.5 0.5 0 0 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.707zm-9.193-9.192a0.5 0.5 0 0 1-0.707 0l-1.414-1.415a0.5 0.5 0 1 1 0.707-0.707l1.414 1.414a0.5 0.5 0 0 1 0 0.708z"
+                      style="fill: #1f2221"
+                    />
+                  </g>
+                  <g
+                    transform="matrix(.26458 0 0 .26458 43.716 145.48)"
+                    style="fill: #d7d7d7; stroke: #f6f3f3"
+                  >
+                    <path
+                      d="M 4.406,3.342 A 5.53,5.53 0 0 1 8,2 c 2.69,0 4.923,2 5.166,4.579 C 14.758,6.804 16,8.137 16,9.773 16,11.569 14.502,13 12.687,13 H 3.781 C 1.708,13 0,11.366 0,9.318 0,7.555 1.266,6.095 2.942,5.725 3.085,4.862 3.64,4.002 4.406,3.342 Z"
+                      style="fill: #d7d7d7; stroke: #f6f3f3"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <p class="font-bold text-lg">+18</p>
+              <p class="text-secondary text-xs">San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="mr-10">
+            <i class="ri-mic-fill ri-md bg-white rounded-full p-4"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="flex gap-4 h-[calc(100vh_-_88px)]">
+        <div class="mx-12 h-full flex justify-center items-center">
+          <div class="flex flex-col">
+            <i class="ri-search-line ri-lg py-4 my-2"></i>
+            <i class="ri-home-5-fill ri-lg side-icons"></i>
+            <i class="ri-movie-2-fill ri-lg side-icons"></i>
+            <i class="ri-clapperboard-fill ri-lg side-icons"></i>
+            <i class="ri-add-fill ri-lg py-4 my-2"></i>
+          </div>
+        </div>
+
+        <div class="">
+          <img class="h-16 mt-3" src="./img/netflix-logo.png" alt="" />
+          <h1 class="text-[5rem] pt-3 font-bold tracking-wider">The Crown</h1>
+          <div class="py-2">
+            <i class="ri-star-fill text-yellow-400 ri-lg"></i>
+            <i class="ri-star-fill text-yellow-400 ri-lg"></i>
+            <i class="ri-star-fill text-yellow-400 ri-lg"></i>
+            <i class="ri-star-fill text-yellow-400 ri-lg"></i>
+            <i class="ri-star-fill ri-lg text-slate-300"></i>
+            <span class="px-6">2020</span>
+            <span class="">4 Season</span>
+            <span class="text-yellow-500 px-6">Ultra 4K</span>
+          </div>
+          <div class="mb-11">
+            <p class="text-secondary brek-normal w-[28rem]">
+              This drama follows the political rivalries and romance of Queen
+              Elizabeth ll's reign and the events that shaped the second half of
+              the 20th century.
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-">
+            <button
+              class="flex items-center flex-nowrap px-4 py-2 w-full shadow-lg h-full bg-white"
+            >
+              <i class="ri-play-circle-fill ri-2x text-red-600 mr-3"></i>Play S4
+              E10`
+            </button>
+            <button
+              class="flex items-center flex-nowrap px-4 py-2 w-full shadow-lg h-full bg-secondary/10"
+            >
+              <i class="ri-play-list-2-fill ri-2x hover-class"></i>
+              All episodes
+            </button>
+          </div>
+
+          <div class="flex gap-4 mt-4">
+            <button
+              class="flex items-center flex-nowrap px-4 py-2 w-full shadow-lg h-full bg-white"
+            >
+              <i class="ri-headphone-fill ri-2x hover-class"></i>Audio &
+              Subtitles
+            </button>
+            <button
+              class="flex items-center flex-nowrap px-4 py-2 w-full shadow-lg h-full bg-secondary/10"
+            >
+              <i class="ri-delete-bin-7-fill ri-2x hover-class"></i>Remove from
+              list
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="absolute top-0 bottom-0 right-0 h-screen -z-10"
+          src="./img/bg-img.jpeg"
+          alt=""
+        />
+      </div>
+    </section>
+  </body>
 </html>
