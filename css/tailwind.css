@@ -10,14 +10,9 @@
         @apply ml-2 after:content-['*'] after:text-[red] after:font-bold 
     }
 } */
-@layer utilities {
-  .side-icons {
-    @apply text-secondary hover:text-dark  py-4 my-2;
-  }
-  .buttons {
-    @apply items-center bg-secondary bg-opacity-10 px-4 hover:shadow-lg hover:bg-white;
-  }
-  .hover-class {
-    @apply text-secondary group-hover:text-red-600 mr-3;
-  }
+@layer utilities{
+    .button-class{
+   @apply flex items-center flex-nowrap px-4 py-2 w-full h-full 
+    }
 }
+

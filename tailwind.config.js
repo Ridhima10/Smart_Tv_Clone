@@ -45,6 +45,30 @@ module.exports = {
           error: "#D49C9C",
         },
       },
+      {
+        theme2: {
+
+          primary: "#dd7878",
+
+          secondary: "#8839ef",
+
+          accent: "#ea76cb",
+
+          neutral: "#4c4f69",
+
+          "base-100": "#eff1f5",
+
+          info: "#04a5e5",
+
+          success: "#a6d189",
+
+          warning: "#ef9f76",
+
+          error: "#e64553",
+        },
+      }
     ],
+
+    darkTheme: "theme2",
   },
 };
