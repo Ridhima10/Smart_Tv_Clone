@@ -10,9 +10,12 @@
         @apply ml-2 after:content-['*'] after:text-[red] after:font-bold 
     }
 } */
-@layer utilities{
-    .button-class{
-   @apply flex items-center flex-nowrap px-4 py-2 w-full h-full 
-    }
+@layer utilities {
+  .button-class {
+    @apply flex items-center flex-nowrap px-4 py-2 w-full h-full;
+  }
 }
 
+* {
+  @apply transition-all duration-300 ease-in-out;
+}
